@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset-="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="webDev.css">
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/Design 2 (1).png" class="logo">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">SERVICES</a></li>
+                        <li><a href="#">PORTFOLIO</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+                 <div class="header-text">
+                    <p>Web Developer</p>
+                    <h1>Hi, I'm <span>Carew</span><br> From Nigeria</h1>
+                 </div>               
+            </div>
+         </div> 
+         <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/pexels-john-lee-6434779.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <h2 class="sub-title-1"><span>Great web design </span> without functionality is like a sports car with no engine.</h2>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links"  onclick="opentab('experience')" >Experience</p>
+                            <p class="tab-links"  onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents">
+                            <div class= "tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                    <li><span>Web Development</span><br>Web app Development</li>
+                                    <li><span>App Development</span><br>Designing Web/App interfaces</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents"  id="experience">
+                                <ul>
+                                    <li><span>2019 - 2021</span><br>Team lead at Startup LLC.</li>
+                                    <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                                    <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2021</span><br>Unversity of Lagos</li>
+                                    <li><span>2014</span><br>Babcock college</li>
+                                </ul>
+                            </div>
+                        </div> 
+                
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+         </div>
+
+         <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+
+
+            }
+ 
+         </script>
+</body>
+</html>          
