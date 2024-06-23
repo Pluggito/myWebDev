@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+
 *
 {
-    margin: 0;
+    margin: auto-fit;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
@@ -11,10 +12,15 @@ body{
     color: white;
 }
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url('images/pexels-hiddencouple-3048527.jpg');
+    background-image: url('images/pexels-omaralnahi-18495.jpg');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -35,6 +41,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+   
 }
 
 .logo
@@ -46,36 +53,42 @@ nav{
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
-    
-    
-    
+    margin: 10px;
+    margin-left: 28px;
 }
 
 nav ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
     position: relative;
+    
+
+   
 }
 
 nav ul li a::after{
     content: '';
-    background: #b30d0d;
     width: 0;
     height: 3px;
     left: 0;
     bottom: -6px;
-    align-self: center;
-    transition: 0.5s;
-    position: absolute;
     cursor: pointer;
-
+    align-self: center;
+    background-color: #b30d0d;
+    position: absolute;
+    transition: 0.5s;
 }
 
 nav ul li a:hover::after{
     width: 100%;
 }
+
+nav ul li a:hover{
+    opacity: 80%;
+    color: #b30d0d;
+}
+
 
 .header-text{
     margin-top: 15%;
@@ -114,6 +127,7 @@ nav ul li a:hover::after{
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
+    opacity: 70%;
    
 }
 
@@ -130,11 +144,27 @@ nav ul li a:hover::after{
 }
 
 .sub-title-1{
-    margin-top: 23px;
+    margin-top: 15px;
 }
 
 .sub-title-1 span{
     color: #b30d0d;
+}
+
+.sub-title-2
+{
+    margin-top: 5px;
+    font-size: 19px;
+}
+
+.sub-title-2 span
+{
+    color: #b30d0d;
+}
+.sub-title-3
+{
+    font-size: 20px;
+    width: fit-content;
 }
 
 .tab-titles
@@ -154,6 +184,10 @@ nav ul li a:hover::after{
 
 }
 
+.tab-links:hover {
+    color: aliceblue;
+}
+
 .tab-links::after{
     content: '';
     width: 0;
@@ -167,7 +201,7 @@ nav ul li a:hover::after{
 
 .tab-links.active-link::after
 {
-    width: 75%;
+    width: 100%;
 }
 
 .tab-contents ul li{
@@ -184,10 +218,274 @@ nav ul li a:hover::after{
 
 .tab-contents
 {
- display: none;   
+  display: none;
 }
 
-.tab-contents.active-tab
+.tab-contents-active-tabs
 {
-   display: block;
+   display: block;  
+}
+
+/*-------------services-----------*/
+#services
+{
+    margin-top: 30px;
+}
+.services-list
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 30px;
+    margin-top: 50px;
+
+}
+
+.services-list div{
+    background: #b30d0d;
+    padding: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 15px;
+    opacity: 75%;
+    transition: 0.6s ;
+
+}
+
+.services-list div i{
+    font-size: 45px;
+    margin-bottom:32px ;
+}
+
+.services-list div h2{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover{
+    background: white;
+    color: #b30d0d;
+    transform: translateY(-15px);
+}
+/*-----------portfolio----------*/
+#portfolio
+{
+    padding: 45px 0;
+}
+
+.work-list
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 30px;
+    margin-top: 50px;
+
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 90%;
+    border-radius: 23px;
+    display: block;
+    opacity: 80%;
+    transition: transform 0.5s;
+}
+
+.layer
+{
+    width: 95%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #b30d0d);
+    border-radius: 12px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 12px;
+    transition: height 0.5s;
+}
+
+.layer h3
+{
+    font-weight: 600;
+    margin-bottom: 30px;
+
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #b30d0d;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.btn
+{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #b30d0d;
+    padding: 14px 50px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s;
+  
+}
+
+.btn:hover{
+    background: #b30d0d;
+    color: #fff;
+    transform: scale(1.05);
+
+}
+
+/*-----------contact--------*/
+.contact-left
+{
+    flex-basis: 35%;
+}
+
+.contact-right
+{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+
+}
+
+.contact-left p i{
+    color: #b30d0d;
+    margin-right: 13px;
+    font-size: 40px;
+}
+
+.social-icons
+{
+    margin-top:30px ;
+
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+
+}
+
+.social-icons a:hover{
+    color: #b30d0d;
+    transform: scale(1.2) translateY(-5px);
+
+}
+
+.btn.btn2
+{
+    display: inline-block;
+    color: #fff;
+}
+
+.contact-right form{
+    width: 100%;
+
+}
+
+form input, form textarea{
+    width: 95%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 8px;
+
+}
+
+.sub-title.sub-title1
+{
+    font-size: 45px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+form.btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: none;
+}
+
+.copyright
+{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 400;
+    margin-top: 20px;
+
+}
+
+.copyright i{
+    color: #b30d0d;
+
+}
+
+/*-----------css for small screen-----*/
+
+@media only screen and (max-width: 600px){
+    #header
+    {
+        background-image: url('images/pexels-hiddencouple-3048527-transformed.jpeg');
+    }
+    .header-text {
+        margin-top: 65%;
+        font-size: 16px;
+
+    }
+    
+    .header-text h1{
+        font-size: 30px;
+    }
+   
 }

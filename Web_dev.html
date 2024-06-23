@@ -1,24 +1,27 @@
 <!DOCTYPE html>
- <html>
+ <html lang="en">
     <head>
-        <meta charset-="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset ="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="webDev.css">
+        <title>webDev</title>
+        <script src="https://kit.fontawesome.com/80e6efec85.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <div id="header">
+        <div id="header"> 
             <div class="container">
                 <nav>
-                    <img src="images/Design 2 (1).png" class="logo">
+                    <img src="images/Design 2 (1).png" class="logo" alt="">
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li><a href="#">PORTFOLIO</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</i></a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        
                     </ul>
+                    
                 </nav>
                  <div class="header-text">
                     <p>Web Developer</p>
@@ -26,23 +29,25 @@
                  </div>               
             </div>
          </div> 
+         <!-----------about--------------->
          <div id="about">
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <img src="images/pexels-john-lee-6434779.jpg">
+                        <img src="images/pexels-view2020-5508355.jpg" alt="">
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
+                        <h3 class="sub-title-2">I'm a <span>Web Developer</span></h3>
                         <h2 class="sub-title-1"><span>Great web design </span> without functionality is like a sports car with no engine.</h2>
-
+                        <p class="sub-title-3">Developed this portfolio website to showcase my front-end development skills and experience. Utilized HTML, CSS frameworks (like Tailwind) for faster development, and JavaScript for animations and interactive elements.</p>
                         <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                             <p class="tab-links"  onclick="opentab('experience')" >Experience</p>
                             <p class="tab-links"  onclick="opentab('education')">Education</p>
                         </div>
                         <div class="tab-contents">
-                            <div class= "tab-contents active-tab" id="skills">
+                            <div class= "tab-contents active-tabs" id="skills">
                                 <ul>
                                     <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
                                     <li><span>Web Development</span><br>Web app Development</li>
@@ -64,12 +69,116 @@
                             </div>
                         </div> 
                 
-                        </div>
+                     </div>
                     </div>
 
                 </div>
             </div>
          </div>
+         <!---------services----------------->
+            <div id="services">
+              <div class="container">
+                <h1>My Services</h1>
+                <div class="services-list">
+                  <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>lorem ipsum dolor sit amet, consecteur adipiscising elit. Sed nulla nibh, tincidunt sit met sapien quis.</p>
+                    <a href="#">Learn more</a>
+                  </div>
+
+                  <div>
+                      <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>lorem ipsum dolor sit amet, consecteur adipiscising elit. Sed nulla nibh, tincidunt sit met sapien quis.</p>
+                    <a href="#">Learn more</a>                    
+                  </div>
+
+                  <div>
+                    <i class="fa-solid fa-camera-retro"></i>
+                    <h2>Photography</h2>
+                    <p>lorem ipsum dolor sit amet, consecteur adipiscising elit. Sed nulla nibh, tincidunt sit met sapien quis.</p>
+                    <a href="#">Learn more</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!----------portfolio--------------->
+            <div id="portfolio">
+                <div class="container">
+                    <h1>My work</h1>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="images/work.jpg" alt="">
+                            <div class="layer">
+                                <h3>Wallpaper website</h3>
+                                <p>Allows users to connect to various talented people all over the world</p>
+                                <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="work">
+                                <img src="images/work 3.jpg" alt="">
+                                <div class="layer">
+                                    <h3>Banking Website</h3>
+                                    <p>Allows users to connect to various banking websites</p>
+                                    <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+                                </div>
+                                                       
+                        </div>
+
+                        <div class="work">
+                            <img src="images/Photography.jpg" alt="">
+                            <div class="layer">                               
+                                <h3>Social Media App</h3>
+                                    <p>Allows users to connect to talented people around the world.</p>
+                                    <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn">See more</a>
+                </div>
+            </div>
+
+
+            <!-----------contact------------->
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="conact-left">
+                            <h1 class="sub-title sub-title1">Contact Me</h1>
+                            <p><i class="fa-sharp fa-solid fa-paper-plane"></i>pluggitoshfl5050@gmail.com</p>
+                            <div class="social-icons">
+                                <a href=""><i class="fa-solid fa-envelope"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+
+                            </div>
+                            <a href="images/Document.docx" download class="btn btn2">Download CV</a>
+
+                            
+                        </div>
+                        <div class="conact-right">
+                            <form action="">
+                                <input type="text" name="name" placeholder="Your name" required>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn2"> Summit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    <p>Copyright <i class="fa-regular fa-copyright"></i> Carew.</p>
+                </div>
+            </div>
+
+
+
 
          <script>
             var tablinks = document.getElementsByClassName("tab-links");
@@ -80,9 +189,10 @@
                     tablink.classList.remove("active-link");
                 }
                 for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab");
+                    tabcontent.classList.remove("active-tabs");
                 }
-
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tabs")
 
             }
  

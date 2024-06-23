@@ -1,0 +1,160 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+
+#main{
+  background-image: url('images/pexels-zhangkaiyv-1083515.jpg');
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 90%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 1010px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 0;
+    margin-left: 45px;
+
+}
+
+nav ul li a{
+    color: rgb(53, 162, 33);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after
+{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(53, 162, 33);
+    left: 0;
+    bottom: -6px;
+    align-self: center;
+    transition:  0.7s;
+    position: absolute;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: grey;
+}
+
+
+nav ul li a:hover::after{
+    width: 100%;
+    
+}
+
+.search-bar{
+    height: 35px;
+    width: 500px;
+    display: flex;
+    border: solid;
+    border-radius: 15px;
+    border-style: unset;
+    margin: 150px 525px;
+    position: absolute;
+    opacity: 47%;
+    font-size: 19px;
+    padding: 0 20px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: black;
+}
+
+.Search{
+    font-size: 19px;
+    font: bold;
+    text-align: center;
+    align-self: center;
+}
+
+.Button-search {
+    height: 35px;
+    width: 100px;
+    border-radius: 15px;
+    opacity: 60%;
+    margin-top: 150px;
+    margin-left: 1030px;
+    background-color: rgb(74, 128, 89);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding-bottom: 4px;
+}
+
+.Button-search:hover {
+    background-color: grey;
+    box-shadow: inset;
+}
+
+.img-1 {
+    width: 400px;
+    height: auto;
+    border-radius: 50px;
+    margin-top: 70px;
+    margin-left: 30px;
+    opacity: 75%;
+}
+
+.pictures {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pictures h1{
+    font-size: 16px;
+    display: inline-block;
+    position: absolute;
+    color: white;
+}
+
+#about
+{
+    padding: 45px 0;
+    color: white;
+    opacity: 70%;
+}
+
+.images
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.layer
+{
+    margin-top: 20px;
+    width: 75%;
+    border-radius: 10px;
+    
+    overflow: hidden;
+}
+
+.layer img{ 
+    width: 75%;
+    border-radius: 15px;
+    display: inline-block;
+    opacity: 75%;
+}
+
