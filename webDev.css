@@ -107,7 +107,7 @@ nav ul li a:hover{
 /*------------about-----------*/
 #about
 {
-    padding: 75px 0;
+    padding: 70px 0;
     color: #fff;
 
 }
@@ -128,12 +128,18 @@ nav ul li a:hover{
     width: 100%;
     border-radius: 15px;
     opacity: 70%;
+    transition: transform 0.5s;
    
+}
+
+.about-col-1 img:hover
+{
+    transform: scale(1.1) ;
 }
 
 .about-col-2{
     flex-basis: 55%;
-    margin-top: 165px;
+    margin-top: 90px;
     opacity: 80%;
 }
 
@@ -221,7 +227,7 @@ nav ul li a:hover{
   display: none;
 }
 
-.tab-contents-active-tabs
+.tab-contents.active-tabs
 {
    display: block;  
 }
@@ -422,6 +428,7 @@ nav ul li a:hover{
     color: #fff;
 }
 
+
 .contact-right form{
     width: 100%;
 
@@ -447,12 +454,25 @@ form input, form textarea{
     display: inline-block;
 }
 
-form.btn2{
-    padding: 14px 60px;
+.btn3{
+    padding: 14px 50px;
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
-    background-color: none;
+    display: block;
+    width: fit-content;
+    border: 1px solid #b30d0d;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s;  
+}
+
+.btn3:hover{
+    background: #b30d0d;
+    color: #fff;
+    transform: scale(1.05);
+
 }
 
 .copyright
